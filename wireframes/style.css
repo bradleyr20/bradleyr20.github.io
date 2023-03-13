@@ -9,3 +9,12 @@
   padding: 0;
   width: 100%;
 }
+
+#browsable {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#browsable li {
+  padding-top: 0.5em;
+}
