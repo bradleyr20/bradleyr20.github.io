@@ -11,10 +11,10 @@
 }
 
 #browsable {
-  font-size: 2em;
+  font-size: 3em;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #browsable li {
-  padding-top: 0.5em;
+  padding-top: 1em;
 }
