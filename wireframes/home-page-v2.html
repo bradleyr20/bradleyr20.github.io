@@ -4,12 +4,13 @@
     <title>USHG Wireframes - Simple image version - Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="Author" content="Brad Rickman and USHG">
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="cash.min.js"></script>
     <style>
-      html { font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif; }
+      html { font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif; font-size: 16px; }
       #lede-clip {
-        height: 428px;
+        height: calc(428px*2);
         width: 100%;
         background-color: #EBEBEB;
         padding: 0;
@@ -22,7 +23,7 @@
       }
       h1 {
         display: inline;
-        font-size: 2.65em;
+        font-size: 5rem;
         font-weight: 100;
         line-height: 1em;
       }
@@ -30,16 +31,19 @@
         display: none;
       }
       #hamburger {
-        padding: 0;
         background-image: url("images/hamburger.svg");
         background-repeat: no-repeat;
-        width: 72px;
-        height: 53px;
+        width:80px;
+        height: 65px;
         float: right;
+        margin: 12px 12px 0 0;
       }
       #hamburger:hover { cursor:pointer; }
       header { display: block; margin: 0; padding: 20px; }
-      .stage-direction { display: block; line-height: 1em; font-size: 1em; color: #ff1493; }
+      .stage-direction { display: block; line-height: 2rem; font-size: 2rem; color: #ff1493; }
+      .main-container { padding: 0 1rem 0 1rem; }
+      .section { border-bottom: 0.25rem dotted #cccccc; padding: 0 0 1rem 0; margin: 1.5rem 0 0 0;}
+      .section h2 { font-size: 3.75rem; font-weight: 200; }
     </style>
 
   </head>
@@ -61,7 +65,13 @@
       </nav>
     </header>
     <div id="lede-clip" style="position: relative;">
-      <p class="stage-direction" style="position: absolute; left: 0; bottom: 0; padding: 0 0 0 1em;">Brand vibes video</p>
+      <p class="stage-direction" style="position: absolute; left: 0; bottom: 0; padding: 0 0 0 1rem;">Brand vibes video</p>
+    </div>
+    <div class="main-container">
+      <p class="stage-direction">Stacked sections based on menu</p>
+      <div class="section first">
+        <h2 class="section-header">Restaurants</h2>
+      </div>
     </div>
 
 
