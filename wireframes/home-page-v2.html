@@ -6,7 +6,7 @@
     <meta name="Author" content="Brad Rickman and USHG">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <style>
       html { font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif; font-size: 16px; }
       #lede-clip {
@@ -28,9 +28,8 @@
         line-height: 1em;
       }
       #siteMenu {
-        /* display: none; */
+        display: none;
         width: 100%;
-        /* padding: 10%; */
         background-color: #EBEBEB;
         position: fixed;
         left: 0;
@@ -55,6 +54,7 @@
       .main-container { padding: 0 1rem 0 1rem; }
       .section { border-bottom: 0.25rem dotted #cccccc; padding: 0 0 1rem 0; margin: 1.5rem 0 0 0;}
       .section h2 { font-size: 3.75rem; font-weight: 200; }
+      .closeX { background-image: url("images/close-X.svg"); background-repeat: no-repeat; background-size: 70px 70px; margin: 3.25rem; position: absolute; display: block; width: 70px; height: 70px; right: 0; top: 0; z-index: 199;  }
     </style>
 
   </head>
@@ -62,17 +62,18 @@
   <body>
     <header>
       <h1>USHG Home</h1>
-      <div title="Menu" id="hamburger"></div>
+      <div title="Menu" id="hamburger">&nbsp;</div>
+      
       <nav id="siteMenu">
-        <div class="closeX">&nbsp;</div>
         <ul>
-          <li>Home</li>
-          <li>Our Culture</li>
-          <li>Our Story</li>
-          <li>Our Team</li>
-          <li>Our Restaurants</li>
-          <li>Private Dining</li>
-          <li>Weddings & Events</li>
+          <div title="Close Menu" class="closeX">&nbsp;</div>
+          <li><a href="home-page-v2.html">Home</a></li>
+          <li><a href="about-culture.html">Our Culture</a></li>
+          <li><a href="about-story.html">Our Story</a></li>
+          <li><a href="about-team.html">Our Team</a></li>
+          <li><a href="restaurants.html">Our Restaurants</a></li>
+          <li><a href="private-dining.html">Private Dining</a></li>
+          <li><a href="weddings-events.html">Weddings & Events</a></li>
         </ul>
       </nav>
     </header>
@@ -85,7 +86,6 @@
         <h2 class="section-header">Restaurants</h2>
       </div>
     </div>
-
 
   </body>
 </html>

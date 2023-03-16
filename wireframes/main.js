@@ -1,5 +1,3 @@
-document.querySelector("#hamburger").addEventListener("click", showHide);
-
 function showHide() {
   var x = document.getElementById("siteMenu");
   if (x.style.display === "none") {
@@ -8,3 +6,6 @@ function showHide() {
     x.style.display = "none";
   }
 }
+
+document.querySelector("#hamburger").addEventListener("click", showHide);
+document.querySelector(".closeX").addEventListener("click", showHide);
