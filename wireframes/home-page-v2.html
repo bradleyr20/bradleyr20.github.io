@@ -6,7 +6,7 @@
     <meta name="Author" content="Brad Rickman and USHG">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="cash.min.js"></script>
+    <script src="main.js"></script>
     <style>
       html { font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif; font-size: 16px; }
       #lede-clip {
@@ -27,9 +27,20 @@
         font-weight: 100;
         line-height: 1em;
       }
-      nav {
-        display: none;
+      #siteMenu {
+        /* display: none; */
+        width: 100%;
+        /* padding: 10%; */
+        background-color: #EBEBEB;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        margin: 0;
       }
+      #siteMenu ul { padding: 0; list-style-type: none; text-align: center; font-size: 3rem; }
+      #siteMenu li { padding: 1rem 0 1rem 0; }
+      #siteMenu li:hover { background-color: #00ffff; }
       #hamburger {
         background-image: url("images/hamburger.svg");
         background-repeat: no-repeat;
@@ -52,7 +63,8 @@
     <header>
       <h1>USHG Home</h1>
       <div title="Menu" id="hamburger"></div>
-      <nav>
+      <nav id="siteMenu">
+        <div class="closeX">&nbsp;</div>
         <ul>
           <li>Home</li>
           <li>Our Culture</li>
