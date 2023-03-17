@@ -7,65 +7,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js" defer></script>
-    <style>
-      html { font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif; }
-      #lede-clip {
-        height: calc(428px*2);
-        width: 100%;
-        background-color: #EBEBEB;
-        padding: 0;
-        margin: 20px 0 0 0;
-        display: block;
-        background-image: url("images/play_button.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: calc(15%);
-      }
-      h1 {
-        display: inline;
-        font-size: 32px;
-        font-weight: 100;
-        line-height: 30px;
-      }
-      #siteMenu {
-        display: none;
-        width: 100%;
-        background-color: #EBEBEB;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        margin: 0;
-      }
-      #siteMenu ul { padding: 0; list-style-type: none; text-align: center; font-size: 24px; }
-      #siteMenu li { padding: 20px 0 20px 0; }
-      #siteMenu li:hover { background-color: #00ffff; }
-      #hamburger {
-        background-image: url("images/hamburger.svg");
-        background-repeat: no-repeat;
-        width:80px;
-        height: 65px;
-        float: right;
-        margin: 12px 12px 0 0;
-      }
-      #hamburger:hover { cursor:pointer; }
-      header { display: block; margin: 0; padding: 20px; }
-      p { font-size: 16px; }
-      .stage-direction { line-height: 16px; font-size: 16px; color: #ff1493; }
-      .main-container { padding: 0 20px 0 20px; }
-      .section { border-bottom: 4px dotted #cccccc; padding: 0 0 1em 0; margin: 24px 0 0 0;}
-      .section h2 { font-size: 32px; font-weight: 200; margin: 16px 0 16px 0; }
-      .closeX { background-image: url("images/close-X.svg"); background-repeat: no-repeat; background-size: 70px 70px; margin: 40px; position: absolute; display: block; width: 70px; height: 70px; right: 0; top: 0; z-index: 199;  }
-      .description { font-size: 18px; line-height: 24px; color: #4d4d4d; margin: 20px 0 40px 0; }
-    </style>
-
   </head>
 
   <body>
     <header>
       <h1>USHG Home</h1>
       <div title="Menu" id="hamburger">&nbsp;</div>
-      
       <nav id="siteMenu">
         <ul>
           <div title="Close Menu" class="closeX">&nbsp;</div>
@@ -80,13 +27,28 @@
       </nav>
     </header>
     <div id="lede-clip" style="position: relative;">
-      <p class="stage-direction" style="position: absolute; left: 0; bottom: 0; padding: 0 0 0 20px;">Brand vibes video</p>
+      <p class="stage-direction inset bottom">Brand vibes video</p>
     </div>
     <div class="main-container">
       <p class="stage-direction">Stacked sections based on menu</p>
       <div class="section first">
         <h2 class="section-header">Restaurants</h2>
         <p class="description">Pellentesque tincidunt, dolor eu dignissim mollis, justo sapien iaculis pede, vel tincidunt lacus nisl sit amet metus. Fusce ac est vitae purus varius tristique.</p>
+      </div>
+      <div class="section">
+        <h2 class="section-header">About Us</h2>
+        <p class="description">Pellentesque tincidunt, dolor eu dignissim mollis, justo sapien iaculis pede, vel tincidunt lacus nisl sit amet metus. Fusce ac est vitae purus varius tristique.</p>
+        <div class="flexContainer">
+          <div class="homePageCategory culture">
+            <div class="catName">Our Culture</div>
+          </div>
+          <div class="homePageCategory story">
+            <div class="catName">Our Story</p>
+          </div>
+          <div class="homePageCategory people">
+            <p>Our Team</p>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -1,5 +1,9 @@
 /* USHG Wireframes CSS */
 
+html {
+  font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif;
+}
+
 #sitenav {
   display: none;
 }
@@ -17,4 +21,157 @@
 
 #browsable li {
   padding-top: 1em;
+}
+
+#lede-clip {
+  height: calc(428px*2);
+  width: 100%;
+  background-color: #EBEBEB;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: block;
+  background-image: url("images/play_button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(15%);
+}
+
+h1 {
+  display: inline;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+#siteMenu {
+  display: none;
+  width: 100%;
+  background-color: #c3c3c3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  margin: 0;
+}
+
+#siteMenu ul { 
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 24px;
+}
+
+#siteMenu li { 
+  padding: 20px 0 20px 0;
+}
+
+#siteMenu li:hover { 
+  background-color: #00ffff;
+}
+
+#hamburger {
+  background-image: url("images/hamburger.svg");
+  background-repeat: no-repeat;
+  width:80px;
+  height: 65px;
+  float: right;
+  margin: 12px 12px 0 0;
+}
+
+#hamburger:hover { 
+  cursor:pointer;
+}
+
+header { display: block;
+  margin: 0;
+  padding: 20px;
+}
+
+p { font-size: 16px;
+}
+
+.stage-direction { 
+  line-height: 16px;
+	font-size: 16px;
+	color: #ff1493;
+}
+
+.stage-direction.inset {
+  position: absolute;
+}
+
+.stage-direction.inset.bottom {
+  left: 0;
+  bottom: 0;
+  padding: 0 0 0 20px;
+}
+
+.main-container { 
+  padding: 0 20px 0 20px;
+}
+
+.section { 
+  border-bottom: 4px dotted #cccccc;
+	padding: 0 0 1em 0;
+	margin: 24px 0 0 0;
+}
+
+.section h2 { font-size: 32px;
+	font-weight: 200;
+	margin: 16px 0 16px 0;
+}
+
+.closeX { 
+  background-image: url("images/close-X.svg");
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  margin: 40px;
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  right: 0;
+  top: 0;
+  z-index: 199;
+}
+
+.description { font-size: 18px;
+	line-height: 24px;
+	color: #4d4d4d;
+	margin: 20px 0 40px 0;
+}
+
+.flexContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start; /* aligns items at the top of the container*/
+  height: 500px;
+}
+
+.homePageCategory {
+  flex: 1 1 0;
+  height: 500px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center top;
+  position: relative;
+}
+
+.homePageCategory.catName {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.homePageCategory.culture {
+  background-image: url("images/Culture-hands.svg");
+}
+
+.homePageCategory.story {
+  background-image: url("images/Story\ book.svg");
+}
+
+.homePageCategory.team {
+  background-image: url("images/Team\ people.svg");
 }
