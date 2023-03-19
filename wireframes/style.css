@@ -38,9 +38,9 @@ html {
 
 h1 {
   display: inline;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 100;
-  line-height: 30px;
+  line-height: 90px;
 }
 
 #hamburger {
@@ -48,6 +48,7 @@ h1 {
   background-repeat: no-repeat;
   width:80px;
   height: 65px;
+  display: inline;
   float: right;
   margin: 12px 12px 0 0;
 }
@@ -117,9 +118,9 @@ p { font-size: 16px;
 }
 
 .section h2 {
-  font-size: 46px;
+  font-size: 56px;
 	font-weight: 200;
-	margin: 16px 0 16px 0;
+	margin: 32px 0 24px 0;
 }
 
 .closeX { 
@@ -137,8 +138,8 @@ p { font-size: 16px;
 }
 
 .section p.description {
-  font-size: 32px;
-	line-height: 24px;
+  font-size: 40px;
+	line-height: 48px;
 	color: #4d4d4d;
 	margin: 20px 0 40px 0;
 }
