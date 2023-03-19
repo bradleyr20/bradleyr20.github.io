@@ -81,19 +81,19 @@ header { display: block;
 }
 
 #siteMenu li { 
-  padding: 20px 0 20px 0;
+  padding: 30px 0 30px 0;
 }
 
 #siteMenu li:hover { 
   background-color: #00ffff;
 }
 
-p { font-size: 16px;
+p { font-size: 32px;
 }
 
 .stage-direction { 
-  line-height: 16px;
-	font-size: 16px;
+  line-height: 24px;
+	font-size: 24px;
 	color: #ff1493;
 }
 
@@ -104,11 +104,11 @@ p { font-size: 16px;
 .stage-direction.inset.bottom {
   left: 0;
   bottom: 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 30px;
 }
 
 .main-container { 
-  padding: 0 20px 0 20px;
+  padding: 0 40px 0 40px;
 }
 
 .section { 
@@ -118,9 +118,9 @@ p { font-size: 16px;
 }
 
 .section h2 {
-  font-size: 56px;
+  font-size: 62px;
 	font-weight: 200;
-	margin: 32px 0 24px 0;
+	margin: 46px 0 30px 0;
 }
 
 .closeX { 
@@ -137,18 +137,19 @@ p { font-size: 16px;
   z-index: 199;
 }
 
-.section p.description {
-  font-size: 40px;
-	line-height: 48px;
+p.description {
+  font-size: 44px;
+	line-height: 52px;
 	color: #4d4d4d;
-	margin: 20px 0 40px 0;
+	margin: 30px 0 30px 0;
 }
 
 .flexContainer {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start; /* aligns items at the top of the container*/
-  height: 500px;
+  height: auto;
+  padding: 10px 0 50px 0;
 }
 
 .homePageCategory {
