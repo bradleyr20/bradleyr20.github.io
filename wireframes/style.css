@@ -150,28 +150,17 @@ p { font-size: 16px;
 
 .homePageCategory {
   flex: 1 1 0;
-  height: 500px;
+  height: auto;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: center top;
-  position: relative;
 }
 
-.homePageCategory.catName {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.homePageCategory .catName {
+  /* position: absolute;
+  bottom: 0; */
+  font-size: 40px;
+  margin: 20px 0 0 0;
 }
 
-.homePageCategory.culture {
-  background-image: url("images/Culture-hands.svg");
-}
-
-.homePageCategory.story {
-  background-image: url("images/Story\ book.svg");
-}
-
-.homePageCategory.team {
-  background-image: url("images/Team\ people.svg");
+img.catIcon {
+  height: 100px;
 }
