@@ -24,7 +24,7 @@ html {
 }
 
 #lede-clip {
-  height: calc(428px*2);
+  height: calc(488px*2);
   width: 100%;
   background-color: #EBEBEB;
   padding: 0;
@@ -167,4 +167,16 @@ p.description {
 
 img.catIcon {
   height: 100px;
+}
+
+#footer {
+  height: 400px;
+  background-color: #505050;
+  margin: 0;
+  width: 100%;
+  position: static;
+}
+
+.section.last {
+  border-bottom: none;
 }
