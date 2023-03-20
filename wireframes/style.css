@@ -111,16 +111,21 @@ p { font-size: 32px;
   padding: 0 40px 0 40px;
 }
 
-.section { 
+.section, .restaurant { 
   border-bottom: 4px dotted #cccccc;
 	padding: 0 0 1em 0;
 	margin: 24px 0 0 0;
 }
 
-.section h2 {
+.restaurant {
+  border-bottom: none;
+  margin-bottom: 60px;
+}
+
+.section h2, .restaurant h2 {
   font-size: 62px;
 	font-weight: 200;
-	margin: 46px 0 30px 0;
+	margin: 46px 0 40px 0;
 }
 
 .closeX { 
