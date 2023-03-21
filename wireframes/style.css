@@ -309,7 +309,7 @@ img.catIcon {
   background-position-x: 0.375em;
   background-repeat: no-repeat; /* Do not repeat the icon image */
   background-size: 50px;
-  width: 90%; /* Full-width */
+  width: 85%; /* Full-width */
   height: 1.5em;
   font-size: 3em; /* Increase font-size */
   padding: 12px 20px 12px 85px; /* Add some padding */
@@ -330,12 +330,10 @@ img.catIcon {
   border-bottom: 2px dotted #9c9c9c;
 }
 
-#RestaurantList li a {
-  
-}
+#RestaurantList li a {  }
 
 #RestaurantList > li > div {
-  margin: 0 0 0.375em 0;
+  margin: 0 0 0.5em 0;
 }
 
 #RestaurantList .restRoomDesc {
@@ -356,16 +354,26 @@ img.catIcon {
 
 .restNameAndRooms {
   display: block; 
-  font-size: 2.5em;
+  font-size: 2.875em;
 }
 
 .neighborhoodAndCapacity {
   display:flex; 
   flex-direction: row; 
   flex-wrap: nowrap; 
-  font-size: 2.725em; 
+  font-size: 2.675em; 
   justify-content: space-between;
   color: #777;
+}
+
+.restRoomDesc {
+  color: #aaa; 
+  font-size: 1.25em; 
+  font-style: italic;
+}
+
+.roomName {
+  color: #aaa;
 }
 
 .neighborhood {  }
@@ -373,16 +381,6 @@ img.catIcon {
 .roomCapacity {  }
 
 .costPP {  }
-
-.restRoomDesc {
-  color: #aaa; 
-  font-size: 0.875em; 
-  font-style: italic;
-}
-
-.roomName {
-  color: #aaa;
-}
 
 .restName {  }
 
