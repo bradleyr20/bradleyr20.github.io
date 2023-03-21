@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>USHG Wireframes - HTML version - Private Dining</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Author" content="Brad Rickman and USHG">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Private Dining</h1>
+      <div title="Menu" id="hamburger">&nbsp;</div>
+      <nav id="siteMenu">
+        <ul>
+          <div title="Close Menu" class="closeX">&nbsp;</div>
+          <li><a href="home-page-v2.html">Home</a></li>
+          <li><a href="about-culture-v2.html">Our Culture</a></li>
+          <li><a href="about-story-v2.html">Our Story</a></li>
+          <li><a href="about-team-v2.html">Our Team</a></li>
+          <li><a href="restaurants-v2.html">Our Restaurants</a></li>
+          <li>Private Dining</li>
+          <li><a href="weddings-events.html">Weddings & Events</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-container">
+      <div class="section first noLine">
+        <h2 class="section-header">In Our Restaurants</h2>
+        
+        <input type="text" id="restSelect" onkeyup="selectRest()" placeholder="Search for a restaurant...">
+
+        <div id="restaurantSorts">
+          <div class="restSorter">Neighborhood</div>
+          <div class="restSorter">Capacity</div>
+          <div class="restSorter">Avg Cost PP</div>
+        </div>
+
+        <ul id="RestaurantList">
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Blue Smoke</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Cedric's</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Ci Siamo</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Daily Provisions</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Gramercy Tavern</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Maialino</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Manhatta</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Marta</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">The Modern</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Porchlight</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Tacocina</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+          <li>
+            <div class="restNameAndRooms">
+              <a href="#" class="restName">Union Square Café</a>&nbsp<span class="roomName">Room Name</span>
+            </div>
+            <div class="neighborhoodAndCapacity">
+              <div class="neighborhood">Neighborhood</div>
+              <div class="roomCapacity">0000-0000</div>
+              <div class="costPP">$000-$0000</div>
+            </div>
+            <div class="restRoomDesc">Curabitur ultrices nonummy lacus. Morbi ipsum ipsum, adipiscing eget, tincidunt vitae, pharetra at, tellus.</div>
+          </li>
+        </ul>
+        
+
+    </div> <!-- end of main-container -->
+
+    <div id="footer">
+      <p class="stage-direction" style="padding: 30px 0 0 30px;">Footer</p>
+    </div> <!-- end of footer -->
+
+  </body>
+</html>

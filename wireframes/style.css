@@ -4,6 +4,41 @@ html {
   font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif;
 }
 
+header { display: block;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  display: inline;
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 70px;
+	font-weight: 200;
+  line-height: 1.075em;
+}
+
+h3 {
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: #00bfff;
+}
+
+a:hover {
+  background-color: #c3f0ff;
+}
+
+a:active {
+  background-color: #febee0;
+}
+
 #sitenav {
   display: none;
 }
@@ -36,13 +71,6 @@ html {
   background-size: calc(15%);
 }
 
-h1 {
-  display: inline;
-  font-size: 70px;
-  font-weight: 100;
-  line-height: 90px;
-}
-
 #hamburger {
   background-image: url("images/hamburger.svg");
   background-repeat: no-repeat;
@@ -55,11 +83,6 @@ h1 {
 
 #hamburger:hover { 
   cursor:pointer;
-}
-
-header { display: block;
-  margin: 0;
-  padding: 20px;
 }
 
 #siteMenu {
@@ -122,10 +145,21 @@ p { font-size: 32px;
   margin-bottom: 60px;
 }
 
-.section h2, .restaurant h2 {
-  font-size: 62px;
-	font-weight: 200;
-	margin: 46px 0 40px 0;
+.restaurant h2, h2.section-header, .headshot h2 {
+	margin: 50px 0 40px 0;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 800px;
+}
+
+.restaurant .image-placeholder {
+  background-color: #00bfff;
+}
+
+.headshot .image-placeholder {
+  background-color: #c2c2c2;
 }
 
 .closeX { 
@@ -142,18 +176,18 @@ p { font-size: 32px;
   z-index: 199;
 }
 
-p.description {
-  font-size: 44px;
-	line-height: 52px;
+.description {
+  font-size: 48px;
+	line-height: 56px;
 	color: #4d4d4d;
-	margin: 30px 0 30px 0;
+	margin: 30px 0 50px 0;
 }
 
 .button-1 {
   padding: 32px 52px;
   background-color: #00bfff;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 38px;
   border-radius: 32px;
   margin: 50px 0 52px 0;
   text-align: center;
@@ -203,12 +237,8 @@ img.catIcon {
   background-size: contain;
 }
 
-h3 {
-  font-weight: 200;
-}
-
 .section-subheader {
-  font-size: 50px;
+  font-size: 54px;
   margin: 60px 0 -10px 0;
 }
 
@@ -268,4 +298,91 @@ h3 {
   background-position-y: 0;
   margin: 90px 0 0 0;
 }
+
+
+
+/* LIST SORTING STYLES */
+
+#restSelect {
+  background-image: url(images/search-icon.svg); /* Add a search icon to input */
+  background-position-y: center;
+  background-position-x: 0.375em;
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  background-size: 50px;
+  width: 90%; /* Full-width */
+  height: 1.5em;
+  font-size: 3em; /* Increase font-size */
+  padding: 12px 20px 12px 85px; /* Add some padding */
+  border: 1px solid #bbb; /* Add a grey border */
+  margin-bottom: 24px; /* Add some space below the input */
+  background-color: #eee;
+}
+
+#RestaurantList {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#RestaurantList > li {
+  margin: 1.5em 0 0 0;
+  border-bottom: 2px dotted #9c9c9c;
+}
+
+#RestaurantList li a {
+  
+}
+
+#RestaurantList > li > div {
+  margin: 0 0 0.375em 0;
+}
+
+#RestaurantList .restRoomDesc {
+  padding-bottom: 2em;
+}
+
+#restaurantSorts {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  font-size: 2.375em; 
+  font-weight:bold; 
+  margin: 1em 0 0 0; 
+  border-bottom: 1px solid #bbb; 
+  padding: 0 0 0.5em 0; 
+  justify-content: space-between;
+}
+
+.restNameAndRooms {
+  display: block; 
+  font-size: 2.5em;
+}
+
+.neighborhoodAndCapacity {
+  display:flex; 
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  font-size: 2.725em; 
+  justify-content: space-between;
+  color: #777;
+}
+
+.neighborhood {  }
+
+.roomCapacity {  }
+
+.costPP {  }
+
+.restRoomDesc {
+  color: #aaa; 
+  font-size: 0.875em; 
+  font-style: italic;
+}
+
+.roomName {
+  color: #aaa;
+}
+
+.restName {  }
 
