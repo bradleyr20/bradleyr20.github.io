@@ -79,6 +79,7 @@ a:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: calc(15%);
+  position: relative;
 }
 
 #hamburger {
@@ -149,7 +150,11 @@ p {
 .section, .restaurant { 
   border-bottom: 4px dotted #cccccc;
 	padding: 0 0 1em 0;
-	margin: 24px 0 0 0;
+	margin: 2em 0 0 0;
+}
+
+.section.first {
+  margin-top: 5em;
 }
 
 .restaurant {
@@ -437,3 +442,23 @@ img.catIcon {
   padding: 30px 0 0 30px;
 }
 
+
+/* Work with Us styles */
+
+#jobCategories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#jobCategories > .button-1 {
+  margin-right: 0.75em;
+  margin-bottom: 0;
+  padding: 1em;
+}
+
+#jobCategories > .button-1:last-child {
+  margin-right: 0;
+}
