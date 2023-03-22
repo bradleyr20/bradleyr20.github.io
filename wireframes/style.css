@@ -2,6 +2,16 @@
 
 html {
   font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 428px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    /* CSS rules for all iPhone models from iPhone X to iPhone 13 Pro Max */
+    /* html { font-size: 32px;} */
 }
 
 header { display: block;
@@ -39,9 +49,9 @@ a:active {
   background-color: #febee0;
 }
 
-#sitenav {
+/* #sitenav {
   display: none;
-}
+} */
 
 .main-image {
   margin: 0;
@@ -100,7 +110,7 @@ a:active {
   padding: 0;
   list-style-type: none;
   text-align: center;
-  font-size: 24px;
+  font-size: 2.5em;
 }
 
 #siteMenu li { 
@@ -111,7 +121,8 @@ a:active {
   background-color: #00ffff;
 }
 
-p { font-size: 32px;
+p {
+  font-size: 32px;
 }
 
 .stage-direction { 
@@ -132,6 +143,7 @@ p { font-size: 32px;
 
 .main-container { 
   padding: 0 40px 0 40px;
+  margin-bottom: 5em;
 }
 
 .section, .restaurant { 
@@ -330,7 +342,7 @@ img.catIcon {
   border-bottom: 2px dotted #9c9c9c;
 }
 
-#RestaurantList li a {  }
+/* #RestaurantList li a {  } */
 
 #RestaurantList > li > div {
   margin: 0 0 0.5em 0;
@@ -376,11 +388,52 @@ img.catIcon {
   color: #aaa;
 }
 
-.neighborhood {  }
+/* .neighborhood {  } */
 
-.roomCapacity {  }
+/* .roomCapacity {  } */
 
-.costPP {  }
+/* .costPP {  } */
 
-.restName {  }
+/* .restName {  } */
+
+
+/* ======================= */
+
+
+#ourPlaceYourPlace {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+/* #ourPlaceYourPlace p {  } */
+
+#ourPlaceYourPlace .prompt {
+  color: #999; font-size: 2em;
+}
+
+#ourPlaceYourPlace .question {
+  font-size: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#ourPlaceYourPlace .option {
+  font-size: 6em;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+#ourPlaceYourPlace .clarification {
+  font-size: 1.75em; color: #5c5c5c;
+  margin: 0.5em 0 0 0;
+}
+
+#ourPlaceYourPlace .joiner {
+  font-size: 1.5em; font-weight: bold;
+  margin: 3em 0 2.675em 0;
+}
+
+#footer .stage-direction {
+  padding: 30px 0 0 30px;
+}
 
