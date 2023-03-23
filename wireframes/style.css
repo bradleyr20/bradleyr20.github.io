@@ -5,6 +5,12 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width:auto;
+}
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 428px) 
@@ -461,4 +467,223 @@ img.catIcon {
 
 #jobCategories > .button-1:last-child {
   margin-right: 0;
+}
+
+
+/* =============================== */
+/* styles for calendar on Whats Happening page */
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif;
+} */
+
+.calendarWrapper{
+  width: 100%;
+  background: #fff;
+}
+.calendarWrapper #calendarHeader{
+  display: flex;
+  align-items: center;
+  padding: 1.5em 1em 1em;
+  justify-content: space-between;
+}
+#calendarHeader .icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#calendarHeader .icons > div {
+  /* height: 2em; */
+  width: 2em;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  /* line-height: 38px; */
+  font-size: 3rem;
+  -webkit-user-select: none;
+  user-select: none;
+  /* border-radius: 50%; */
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+#calendarHeader .icons span:hover{
+  background: #f2f2f2;
+}
+#calendarHeader p.current-month {
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.calendar {
+  padding: 20px;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 2.75rem;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  /* margin-top: 30px; */
+  margin: 0.125em 0;
+  padding: 0.5em 0;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  background: #00bfff;
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+
+
+/* styles for events listings on calendar page */
+
+#eventsAgenda {  }
+
+.eventsMonth {
+  border-bottom: #333 solid 1px;
+  padding: 2.5em 0 0 0;
+}
+
+.eventsMonth:first-child {
+  padding: 0;
+  margin: 0;
+}
+
+.eventsMonth:last-child, .eventListing:last-child {
+  border-bottom: none;
+}
+
+.eventsMonth h3 {
+  font-size: 3.5em;
+  margin: 0 0 0.5em 0;
+  color: #5c5c5c;
+}
+
+.eventListing {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align:start;
+  justify-content: flex-start;
+  padding: 0.5em 0 2.5em 0;
+  margin: 1.5em 0 1.5em 0;
+  border-bottom: #4d4d4d dotted 1px;
+}
+
+
+.eventDate {
+  font-size: 8em;
+  font-weight: 100;
+  margin: 0 0.275em 0 0;
+  padding: 0;
+  line-height: 1em;
+  color: #999;
+}
+
+.eventDetails {
+  text-align: left;
+}
+
+h4.eventTitle {
+  font-size: 3em;
+  line-height: 1.2em;
+  margin: 0;
+  font-weight: 300;
+}
+
+p.eventDesc {
+  margin: 0.5em 0 0 0;
+  font-size: 2em;
+}
+
+
+
+/* news-related styles */
+
+ul#newsTouts {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li.newsTout {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: start;
+  align-items: flex-start;
+  border-bottom: #4d4d4d dotted 1px;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
+
+li.newsTout:last-child {
+  border-bottom: none;
+  margin-bottom: none;
+  padding-bottom: none;
+}
+
+.news-image-placeholder {
+  flex: 0 0 180px;
+  height: 180px;
+  background-color: #878787;
+  margin: 0 2em 0 0;
+  padding: 0;
+}
+
+.newsItem {
+  flex: 1 1 auto;
+}
+
+.newsItem h3 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.newsItem p {
+  font-size: 2em;
+  padding: 0;
+  margin: 0.5em 0 0 0;
 }
