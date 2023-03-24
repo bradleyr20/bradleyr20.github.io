@@ -206,6 +206,14 @@ p {
 	margin: 30px 0 50px 0;
 }
 
+ul.bodyText {
+  font-size: 2.5em;
+}
+
+ul.bodyText li {
+  margin-top: 1em;
+}
+
 p.pullQuote {
   font-size: 3.5em;
   line-height: 1.4em;
@@ -251,8 +259,39 @@ p.quoteCredit {
   margin: 20px 0 0 0;
 }
 
+.stats {
+  text-align: center;
+}
+
+.stats h3 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0.275em 0 0.4em 0;
+}
+
+.stats h3.sub {
+  margin-top: 2em;
+}
+
+.stats h4 {
+  font-size: 1.25em;
+  padding: 0;
+  margin: 0;
+  color: #777;
+}
+
+.stats h5 {
+  font-size: 0.85em;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+}
+
 img.catIcon {
   height: 100px;
+}
+
+.stats .pullQuote {
+  margin: 2.5em 0;
 }
 
 #footer {
@@ -277,7 +316,7 @@ img.catIcon {
 }
 
 .section-subheader {
-  font-size: 54px;
+  font-size: 3em;
   margin: 60px 0 -10px 0;
 }
 
