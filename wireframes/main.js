@@ -55,8 +55,12 @@ function selectRest() {
 
 
 
-// script for Calendar on Whats Happening page
-const daysTag = document.querySelector(".days"),
+// ------ REFERENCE script for Calendar on Whats Happening page ------
+// ^^ CURRENTLY EXISTS ON WHATS HAPPENING PAGE ITSELF ^^
+// need to refactor to keep rederCalendar() from running on all pages,
+// which generates a js error
+
+/* const daysTag = document.querySelector(".days"),
       currentDate = document.querySelector(".current-month"),
       prevNextIcon = document.querySelectorAll(".icons div");
 
@@ -109,5 +113,5 @@ const daysTag = document.querySelector(".days"),
               }
               renderCalendar(); // calling renderCalendar function
           });
-      });
+      }); */
 

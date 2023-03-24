@@ -22,7 +22,7 @@ body {
 
 header { display: block;
   margin: 0;
-  padding: 20px;
+  padding: 2.25em 2.25em 1em 2.25em;
 }
 
 h1 {
@@ -204,6 +204,22 @@ p {
 	line-height: 56px;
 	color: #4d4d4d;
 	margin: 30px 0 50px 0;
+}
+
+p.pullQuote {
+  font-size: 3.5em;
+  line-height: 1.4em;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 0.375em 0;
+}
+
+p.quoteCredit {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0 0 1.5em 0;
+  padding: 0;
 }
 
 .button-1 {
@@ -686,4 +702,22 @@ li.newsTout:last-child {
   font-size: 2em;
   padding: 0;
   margin: 0.5em 0 0 0;
+}
+
+
+/* ================================= */
+
+
+.inline-video-clip {
+  height: calc(390px*2);
+  width: 100%;
+  background-color: #EBEBEB;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: block;
+  background-image: url("images/play_button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(15%);
+  position: relative;
 }
