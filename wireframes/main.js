@@ -53,6 +53,21 @@ function selectRest() {
   }
 }
 
+document.getElementsByClassName("reveal-text")[0].addEventListener("click", showHideText);
+document.getElementsByClassName("hide-text")[0].addEventListener("click", showHideText);
+
+function showHideText() {
+  var x = document.getElementsByClassName("text-reveal")[0];
+  var y = document.getElementsByClassName("reveal-text")[0];
+  if (x.style.display == "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
+}
+
 
 
 // ------ REFERENCE script for Calendar on Whats Happening page ------

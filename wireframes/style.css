@@ -42,6 +42,14 @@ h3 {
   font-weight: 200;
 }
 
+h3.role {
+  font-weight:400;
+}
+
+h2.speaker-name {
+  margin: 0.8em 0 0.3em 0;
+}
+
 a {
   text-decoration: none;
   color: #00bfff;
@@ -759,4 +767,48 @@ li.newsTout:last-child {
   background-repeat: no-repeat;
   background-size: calc(15%);
   position: relative;
+}
+
+/* ================================= */
+
+#bio p {
+  font-size: 2em;
+  line-height: 1.6em;
+}
+
+.text-reveal {
+  display: none;
+}
+
+#bio p.reveal-text, #bio p.hide-text {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #00bfff;
+  text-transform: uppercase;
+}
+
+.promo-box {
+  background-color: #396b8c;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2em;
+  margin: 2em 0 1em 0;
+  color: #fff;
+}
+
+.promo-box img {
+  width: 200px;
+  margin: 0 2em 0 0;
+}
+
+.promo-box h4 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.promo-box h5 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0 0 1em 0;
 }
