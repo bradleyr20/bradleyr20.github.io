@@ -40,6 +40,7 @@ h2 {
 
 h3 {
   font-weight: 200;
+  font-size: 2em;
 }
 
 h3.role {
@@ -800,7 +801,7 @@ li.newsTout:last-child {
 }
 
 #bio p.reveal-text, #bio p.hide-text {
-  font-size: 0.8em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #00bfff;
   text-transform: uppercase;
