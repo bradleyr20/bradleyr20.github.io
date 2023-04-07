@@ -24,7 +24,8 @@ body {
     }
 }
 
-header { display: block;
+header {
+  display: block;
   margin: 0;
   padding: 1rem;
 }
@@ -113,14 +114,14 @@ button {
 #hamburger {
   background-image: url("images/hamburger.svg");
   background-repeat: no-repeat;
-  width:1.25rem;
+  width:1.5rem;
   /* height: 0.75rem; */
   display: inline;
   float: right;
-  margin: 0.25rem 0.5rem;
+  margin: 0.5rem 0.75rem;
 }
 
-#hamburger:hover { 
+#hamburger { 
   cursor:pointer;
 }
 
@@ -135,19 +136,38 @@ button {
   margin: 0;
 }
 
-#siteMenu ul { 
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
+#siteMenu ul {
+  list-style: none;
+}
+
+#siteMenu #accordionNav {
+  padding: 0.25rem 1.5rem;
   font-size: 1.25rem;
 }
 
 #siteMenu li { 
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
-#siteMenu li:hover { 
+/* #siteMenu li:hover { 
   background-color: #00ffff;
+} */
+
+#siteMenu .subNavGroup {
+  display: none;
+  margin: 0.25rem 0;
+  padding: 0;
+}
+
+#accordionNav {
+  text-align: center;
+}
+
+#siteMenu #accordionNav h2 {
+  font-size: 1.325rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -211,7 +231,6 @@ p {
   background-image: url("images/close-X.svg");
   background-repeat: no-repeat;
   background-size: 1.25rem 1.25rem;
-  margin: 0.5rem;
   position: absolute;
   display: block;
   width: 2rem;
@@ -219,6 +238,10 @@ p {
   right: 0;
   top: 0;
   z-index: 199;
+}
+
+#closeBurger {
+  margin: 1rem 0.5rem;
 }
 
 .description {
@@ -273,6 +296,11 @@ p.quoteCredit {
   align-items: flex-start; /* aligns items at the top of the container*/
   height: auto;
   padding: 0.625rem 0 1rem 0;
+}
+
+.flexRow {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .homePageCategory {
