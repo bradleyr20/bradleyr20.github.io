@@ -1,8 +1,16 @@
+// Inserting the code block to wrapper element
+document.getElementById("headerBlock").innerHTML = headerCode;
+
+// filling in the page name for the H1
+document.getElementById("topOfPageText").innerHTML = aichOne;
+
+// declaring site nav variables for interaction
 const menu = document.getElementById("siteMenu"), 
   hamburger = document.getElementById("hamburger"),
   closeBurger = document.getElementById("closeBurger"),
   showSubs = document.getElementsByClassName("subNavParent"),
   subMenus = document.getElementsByClassName("subNavGroup");
+  //pageHeader = document.getElementById("pageHeader");
 
 hamburger.addEventListener("click", () => {
   menu.style.display = "block";
@@ -25,20 +33,6 @@ for (let i = 0; i < showSubs.length; i++) {
       }
   });
 }
-
-
-// HEADER INCLUDE SCRIPT (===NOT WORKING LOCALLY===)
-// function makeHeader() {
-//   fetch("header.html")
-//   .then(response => {
-//     return response.text()
-//   })
-//   .then(data => {
-//     document.getElementById("header").innerHTML = data;
-//   });
-// }
-//makeHeader();
-
 
 // RESTAURANT LIST SORTING SCRIPT (===NOT CURRENTLY IMPLEMENTED===)
 // function sortRestList() {
@@ -82,3 +76,5 @@ function selectRest() {
     }
   }
 }
+
+// pageHeader.innerHTML = pageName;
