@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  width:auto;
+  width:100%;
 }
 
 @media only screen 
@@ -18,29 +18,34 @@ body {
 
     /* CSS rules for all iPhone models from iPhone X to iPhone 13 Pro Max */
     /* html { font-size: 32px;} */
+
+    #lede-clip {
+      height: 420px;
+    }
 }
 
-header { display: block;
+header {
+  display: block;
   margin: 0;
-  padding: 2.25em 2.25em 1em 2.25em;
+  padding: 1.5rem 1.2rem 1.2rem;
 }
 
 h1 {
   display: inline;
-  font-size: 70px;
+  font-size: 1.75rem;
   font-weight: 100;
-  line-height: 90px;
+  line-height: 1.2rem;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 1.75rem;
 	font-weight: 200;
-  line-height: 1.075em;
+  line-height: 1.6rem;
 }
 
 h3 {
   font-weight: 200;
-  font-size: 2.75em;
+  font-size: 1.125rem;
 }
 
 h3.role {
@@ -48,11 +53,18 @@ h3.role {
 }
 
 h2.speaker-name, h2.book-title {
-  margin: 0.8em 0 0.3em 0;
+  margin: 0.8rem 0 0.3rem 0;
 }
 
 h2.book-title {
   text-transform: uppercase;
+  line-height: 2rem;
+}
+
+h3.book-subtitle {
+  font-size: 1.3rem;
+  margin: 0.6rem 0 0 0;
+  padding: 0;
 }
 
 a {
@@ -93,11 +105,11 @@ button {
 }
 
 #lede-clip {
-  height: calc(488px*2);
+  height: 420px;
   width: 100%;
   background-color: #EBEBEB;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 0.125rem 0 0 0;
   display: block;
   background-image: url("images/play_button.svg");
   background-position: center;
@@ -109,14 +121,14 @@ button {
 #hamburger {
   background-image: url("images/hamburger.svg");
   background-repeat: no-repeat;
-  width:80px;
-  height: 65px;
+  width:1.5rem;
+  /* height: 0.75rem; */
   display: inline;
   float: right;
-  margin: 12px 12px 0 0;
+  /* margin: 0.5rem 0.75rem; */
 }
 
-#hamburger:hover { 
+#hamburger { 
   cursor:pointer;
 }
 
@@ -131,28 +143,47 @@ button {
   margin: 0;
 }
 
-#siteMenu ul { 
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-  font-size: 2.5em;
+#siteMenu ul {
+  list-style: none;
+}
+
+#siteMenu #accordionNav {
+  padding: 0.25rem 1.5rem;
+  font-size: 1.25rem;
 }
 
 #siteMenu li { 
-  padding: 30px 0 30px 0;
+  padding: 0.5rem 0;
 }
 
-#siteMenu li:hover { 
+/* #siteMenu li:hover { 
   background-color: #00ffff;
+} */
+
+#siteMenu .subNavGroup {
+  display: none;
+  margin: 0.25rem 0;
+  padding: 0;
+}
+
+#accordionNav {
+  text-align: center;
+}
+
+#siteMenu #accordionNav h2 {
+  font-size: 1.325rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  font-size: 32px;
+  font-size: 1rem;
 }
 
 .stage-direction { 
-  line-height: 24px;
-	font-size: 24px;
+  line-height: 1rem;
+	font-size: 1rem;
 	color: #ff1493;
 }
 
@@ -163,12 +194,12 @@ p {
 .stage-direction.inset.bottom {
   left: 0;
   bottom: 0;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 0.75rem;
 }
 
 .main-container { 
-  padding: 0 40px 0 40px;
-  margin-bottom: 5em;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .section, .restaurant { 
@@ -178,21 +209,21 @@ p {
 }
 
 .section.first {
-  margin-top: 5em;
+  margin-top: 1.5rem;
 }
 
 .restaurant {
   border-bottom: none;
-  margin-bottom: 60px;
+  margin-bottom: 1rem;
 }
 
 .restaurant h2, h2.section-header, .headshot h2 {
-	margin: 50px 0 40px 0;
+	margin: 1rem 0;
 }
 
 .image-placeholder {
   width: 100%;
-  height: 800px;
+  height: 360px;
 }
 
 .restaurant .image-placeholder {
@@ -206,55 +237,59 @@ p {
 .closeX { 
   background-image: url("images/close-X.svg");
   background-repeat: no-repeat;
-  background-size: 70px 70px;
-  margin: 40px;
+  background-size: 1.25rem 1.25rem;
   position: absolute;
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 2rem;
+  height: 2rem;
   right: 0;
   top: 0;
   z-index: 199;
 }
 
+#closeBurger {
+  margin: 1rem 0.5rem;
+}
+
 .description {
-  font-size: 48px;
-	line-height: 56px;
+  font-size: 1.2rem;
+	line-height: 1.4rem;
 	color: #4d4d4d;
-	margin: 30px 0 50px 0;
+	margin: 1rem 0;
 }
 
 ul.bodyText {
-  font-size: 2.5em;
+  font-size: 1.2rem;
+  padding: 0 0 0.125rem 1.3rem;
 }
 
 ul.bodyText li {
-  margin-top: 1em;
+  margin-top: 0.75rem;
 }
 
 p.pullQuote {
-  font-size: 3.5em;
-  line-height: 1.4em;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
   text-align: center;
   padding: 0;
-  margin: 0 0 0.375em 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
 p.quoteCredit {
   text-align: center;
-  font-size: 2em;
-  line-height: 1.2em;
-  margin: 0 0 1.5em 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0 0 1.75rem 0;
   padding: 0;
 }
 
 .button-1 {
-  padding: 32px 52px;
+  padding: 0.75rem;
   background-color: #00bfff;
   color: #ffffff;
-  font-size: 38px;
-  border-radius: 32px;
-  margin: 50px 0 52px 0;
+  font-size: 1.2rem;
+  border-radius: 0.75rem;
+  margin: 1.25rem 0;
   text-align: center;
 }
 
@@ -268,7 +303,12 @@ p.quoteCredit {
   flex-flow: row nowrap;
   align-items: flex-start; /* aligns items at the top of the container*/
   height: auto;
-  padding: 10px 0 50px 0;
+  padding: 0.625rem 0 1rem 0;
+}
+
+.flexRow {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .homePageCategory {
@@ -278,8 +318,8 @@ p.quoteCredit {
 }
 
 .catName {
-  font-size: 40px;
-  margin: 20px 0 0 0;
+  font-size: 1.1rem;
+  margin: 1rem 0 0 0;
 }
 
 .stats {
@@ -287,30 +327,30 @@ p.quoteCredit {
 }
 
 .stats h3 {
-  font-size: 3em;
+  font-size: 1.25rem;
   padding: 0;
-  margin: 0.275em 0 0.4em 0;
+  margin: 0.275rem 0 0.4em 0;
 }
 
 .stats h3.sub {
-  margin-top: 2em;
+  margin-top: 0.5rem;
 }
 
 .stats h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 0;
   margin: 0;
   color: #777;
 }
 
 .stats h5 {
-  font-size: 0.85em;
+  font-size: 1.125rem;
   padding: 0;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
 }
 
 img.catIcon {
-  height: 100px;
+  height: 50px;
 }
 
 .stats .pullQuote {
@@ -318,7 +358,7 @@ img.catIcon {
 }
 
 #footer {
-  height: 400px;
+  height: 480px;
   background-color: #505050;
   margin: 0;
   width: 100%;
@@ -331,7 +371,7 @@ img.catIcon {
 
 #virtuous-cycle-illo {
   width: 100%;
-  height: calc(488px*2);
+  height: 390px;
   background-image: url(images/virtuous-cycle.png); 
   background-position: center;
   background-repeat: no-repeat;
@@ -339,13 +379,13 @@ img.catIcon {
 }
 
 .section-subheader {
-  font-size: 3em;
-  margin: 60px 0 -10px 0;
+  font-size: 1.325rem;
+  margin: 1.5rem 0 -0.5rem 0;
 }
 
 .secondary-subhead {
-  font-size: 2.25em;
-  margin: 1em 0;
+  font-size: 1.125rem;
+  margin: 1rem 0;
 }
 
 .logo-collection {
@@ -353,14 +393,14 @@ img.catIcon {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 20px 0 30px 0;
+  margin: 0.75rem 0 1rem 0;
 }
 
 .logo-placeholder {
-  width: 410px;
-  height: 180px;
+  width: 45%;
+  height: 75px;
   background-color: #9c9c9c;
-  margin: 20px 0 20px 0;
+  margin: 0.5rem 0;
 }
 
 .link {
@@ -377,12 +417,12 @@ img.catIcon {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 50px 0 50px 0;
+  margin: 1.5rem 0;
 }
 
 .timeline-caption {
-  font-size: 42px;
-  line-height: 48px;
+  font-size: 1rem;
+  line-height: 1.3rem;
   color: #505050;
   width: 33%;
 }
@@ -391,6 +431,10 @@ img.catIcon {
   width: 33%;
   text-align: center;
   vertical-align: middle;
+}
+
+.timeline-image-placeholder {
+  width: 33%;
 }
 
 .timeline-row.reverse {
@@ -402,7 +446,7 @@ img.catIcon {
   background-repeat: repeat-y;
   background-position-x: center;
   background-position-y: 0;
-  margin: 90px 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 
@@ -412,15 +456,15 @@ img.catIcon {
 #restSelect {
   background-image: url(images/search-icon.svg); /* Add a search icon to input */
   background-position-y: center;
-  background-position-x: 0.375em;
+  background-position-x: 0.35rem;
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  background-size: 50px;
+  background-size: 23px;
   width: 85%; /* Full-width */
-  height: 1.5em;
-  font-size: 3em; /* Increase font-size */
-  padding: 12px 20px 12px 85px; /* Add some padding */
+  height: 1.5rem;
+  font-size: 1rem; /* Increase font-size */
+  padding: 0.5rem 1rem 0.5rem 2rem; /* Add some padding */
   border: 1px solid #bbb; /* Add a grey border */
-  margin-bottom: 24px; /* Add some space below the input */
+  margin-bottom: 1.25rem; /* Add some space below the input */
   background-color: #eee;
 }
 
@@ -432,49 +476,49 @@ img.catIcon {
 }
 
 #RestaurantList > li {
-  margin: 1.5em 0 0 0;
+  margin: 0.75rem 0 0 0;
   border-bottom: 2px dotted #9c9c9c;
 }
 
 /* #RestaurantList li a {  } */
 
 #RestaurantList > li > div {
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
 }
 
 #RestaurantList .restRoomDesc {
-  padding-bottom: 2em;
+  padding-bottom: 0.5rem;
 }
 
 #restaurantSorts {
   display: flex; 
   flex-direction: row; 
   flex-wrap: nowrap; 
-  font-size: 2.375em; 
+  font-size: 1rem; 
   font-weight:bold; 
-  margin: 1em 0 0 0; 
+  margin: 0.5rem 0 0 0; 
   border-bottom: 1px solid #bbb; 
-  padding: 0 0 0.5em 0; 
+  padding: 0 0 0.5rem 0; 
   justify-content: space-between;
 }
 
 .restNameAndRooms {
   display: block; 
-  font-size: 2.875em;
+  font-size: 1.25rem;
 }
 
 .neighborhoodAndCapacity {
   display:flex; 
   flex-direction: row; 
   flex-wrap: nowrap; 
-  font-size: 2.675em; 
+  font-size: 1.05rem; 
   justify-content: space-between;
   color: #777;
 }
 
 .restRoomDesc {
   color: #aaa; 
-  font-size: 1.25em; 
+  font-size: 0.8rem; 
   font-style: italic;
 }
 
@@ -496,39 +540,39 @@ img.catIcon {
 
 #ourPlaceYourPlace {
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 2rem;
 }
 
 /* #ourPlaceYourPlace p {  } */
 
 #ourPlaceYourPlace .prompt {
-  color: #999; font-size: 2em;
+  color: #999; font-size: 1.375rem;
 }
 
 #ourPlaceYourPlace .question {
-  font-size: 4em;
-  padding-left: 1em;
-  padding-right: 1em;
+  font-size: 2rem;
+  padding: 0 1rem;
 }
 
 #ourPlaceYourPlace .option {
-  font-size: 6em;
-  margin: 0.5em 0 0 0;
+  font-size: 2.6rem;
+  margin: 0.5rem 0 0 0;
   padding: 0;
 }
 
 #ourPlaceYourPlace .clarification {
-  font-size: 1.75em; color: #5c5c5c;
-  margin: 0.5em 0 0 0;
+  font-size: 1.5em; color: #5c5c5c;
+  margin: 0.5rem 0 0 0;
 }
 
 #ourPlaceYourPlace .joiner {
-  font-size: 1.5em; font-weight: bold;
-  margin: 3em 0 2.675em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1.2rem 0 1.5rem;
 }
 
 #footer .stage-direction {
-  padding: 30px 0 0 30px;
+  padding: 1rem 0 0 1rem;
 }
 
 
@@ -570,7 +614,7 @@ img.catIcon {
 .calendarWrapper #calendarHeader{
   display: flex;
   align-items: center;
-  padding: 1.5em 1em 1em;
+  padding: 0.5rem;
   justify-content: space-between;
 }
 #calendarHeader .icons {
@@ -581,13 +625,13 @@ img.catIcon {
 }
 #calendarHeader .icons > div {
   /* height: 2em; */
-  width: 2em;
-  margin: 0 1px;
+  width: 2.5rem;
+  margin: 0 0.5px;
   cursor: pointer;
   color: #878787;
   text-align: center;
   /* line-height: 38px; */
-  font-size: 3rem;
+  font-size: 1.75rem;
   -webkit-user-select: none;
   user-select: none;
   /* border-radius: 50%; */
@@ -599,13 +643,13 @@ img.catIcon {
   background: #f2f2f2;
 }
 #calendarHeader p.current-month {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0;
   margin: 0;
 }
 .calendar {
-  padding: 20px;
+  padding: -0.125rem 0.5rem 0 0.5rem;
 }
 .calendar ul {
   display: flex;
@@ -620,7 +664,7 @@ img.catIcon {
 .calendar li {
   color: #333;
   width: calc(100% / 7);
-  font-size: 2.75rem;
+  font-size: 1.1rem;
 }
 .calendar .weeks li {
   font-weight: 500;
@@ -666,7 +710,7 @@ img.catIcon {
 
 .eventsMonth {
   border-bottom: #333 solid 1px;
-  padding: 2.5em 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .eventsMonth:first-child {
@@ -679,9 +723,10 @@ img.catIcon {
 }
 
 .eventsMonth h3 {
-  font-size: 3.5em;
-  margin: 0 0 0.5em 0;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
   color: #5c5c5c;
+  padding: 0;
 }
 
 .eventListing {
@@ -689,18 +734,17 @@ img.catIcon {
   flex-flow: row nowrap;
   text-align:start;
   justify-content: flex-start;
-  padding: 0.5em 0 2.5em 0;
-  margin: 1.5em 0 1.5em 0;
+  padding: 0.5rem 0 1rem;
+  margin: 0.75rem 0;
   border-bottom: #4d4d4d dotted 1px;
 }
 
-
 .eventDate {
-  font-size: 8em;
+  font-size: 3rem;
   font-weight: 100;
-  margin: 0 0.275em 0 0;
+  margin: 0 1rem 0 0;
   padding: 0;
-  line-height: 1em;
+  line-height: 2.75rem;
   color: #999;
 }
 
@@ -709,15 +753,15 @@ img.catIcon {
 }
 
 h4.eventTitle {
-  font-size: 3em;
-  line-height: 1.2em;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   margin: 0;
   font-weight: 300;
 }
 
 p.eventDesc {
-  margin: 0.5em 0 0 0;
-  font-size: 2em;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.2rem;
 }
 
 
@@ -736,8 +780,8 @@ li.newsTout {
   text-align: start;
   align-items: flex-start;
   border-bottom: #4d4d4d dotted 1px;
-  margin-bottom: 2em;
-  padding-bottom: 2em;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 li.newsTout:last-child {
@@ -747,10 +791,10 @@ li.newsTout:last-child {
 }
 
 .news-image-placeholder {
-  flex: 0 0 180px;
-  height: 180px;
+  flex: 0 0 90px;
+  height: 90px;
   background-color: #878787;
-  margin: 0 2em 0 0;
+  margin: 0 1.25rem 0 0;
   padding: 0;
 }
 
@@ -759,14 +803,14 @@ li.newsTout:last-child {
 }
 
 .newsItem h3 {
-  font-size: 3em;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
-  line-height: 1em;
+  line-height: 1.5rem;
 }
 
 .newsItem p {
-  font-size: 2em;
+  font-size: 1.2em;
   padding: 0;
   margin: 0.5em 0 0 0;
 }
@@ -776,7 +820,7 @@ li.newsTout:last-child {
 
 
 .inline-video-clip {
-  height: calc(390px*2);
+  height: 380px;
   width: 100%;
   background-color: #EBEBEB;
   padding: 0;
@@ -792,8 +836,8 @@ li.newsTout:last-child {
 /* ================================= */
 
 #bio p {
-  font-size: 2.5em;
-  line-height: 1.6em;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .text-reveal {
@@ -801,7 +845,7 @@ li.newsTout:last-child {
 }
 
 #bio p.reveal-text, #bio p.hide-text {
-  font-size: 2em;
+  font-size: 1rem;
   font-weight: bold;
   color: #00bfff;
   text-transform: uppercase;
@@ -847,16 +891,20 @@ li.newsTout:last-child {
 }
 
 #faq {
-  margin-bottom: 3em;
+  margin-bottom: 1.5rem;
 }
 
 #faq p {
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 #faq p.faq-question {
+  font-size: 1.3rem;
   font-weight: bold;
-  margin: 2em 0 0.75em 0;
+  margin: 1.75rem 0 0.5rem 0;
+  line-height: 1.5rem;
 }
 
 ul#books {
