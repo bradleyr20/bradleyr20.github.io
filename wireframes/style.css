@@ -32,15 +32,15 @@ header {
 
 h1 {
   display: inline;
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   font-weight: 100;
   line-height: 1.2rem;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.675rem;
 	font-weight: 200;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
 }
 
 h3 {
@@ -87,6 +87,26 @@ a:active {
 button {
   border: none;
   background-color:transparent;
+}
+
+h2.pageSection {
+  font-size: 2rem;
+}
+
+section h2.section-header {
+  color: #4d4d4d;
+}
+
+section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: #ccc solid 3px;
+}
+
+section.first {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 /* #sitenav {

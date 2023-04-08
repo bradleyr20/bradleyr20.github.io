@@ -11,9 +11,9 @@ var headerCode =
           <li class="subNavParent"> <!-- About Us -->
             <h2 class="navItemMainName">About Us</h2>
             <ul class="subNavGroup">
-              <li class="subNavItem"><a href="about-culture-v2.html">Our Culture</a></li>
-              <li class="subNavItem"><a href="about-story-v2.html">Our Story</a></li>
-              <li class="subNavItem"><a href="about-team-v2.html">Our Team</a></li>
+              <li class="subNavItem"><a href="about-us.html">Our Culture</a></li>
+              <li class="subNavItem"><a href="about-us.html#story-section">Our Story</a></li>
+              <li class="subNavItem"><a href="about-us.html#team-section">Our Team</a></li>
               <li class="subNavItem"><a href="https://ehi.fund/">Enlightened Hospitality Investments</a></li>
             </ul>
           </li>
