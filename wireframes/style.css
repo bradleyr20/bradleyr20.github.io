@@ -11,8 +11,7 @@ body {
   width:100%;
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
+@media only screen
   and (max-device-width: 428px) 
   and (-webkit-min-device-pixel-ratio: 3) {
 
@@ -22,6 +21,13 @@ body {
     #lede-clip {
       height: 420px;
     }
+}
+
+@media only screen 
+  and (min-device-width: 429px) {
+      #lede-clip {
+        height: 800px;
+      }
 }
 
 header {
@@ -129,8 +135,11 @@ section.first {
 }
 
 #lede-clip {
-  height: 420px;
   width: 100%;
+  min-height: 420px;
+  max-height: 800px;
+  height: auto;
+  overflow: auto;
   background-color: #EBEBEB;
   padding: 0;
   margin: 0.125rem 0 0 0;
