@@ -235,10 +235,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.section, .restaurant { 
+.section { 
   border-bottom: 4px dotted #cccccc;
-	padding: 0 0 1em 0;
-	margin: 2em 0 0 0;
+	padding: 0 0 1rem 0;
+	margin: 2rem 0 0 0;
 }
 
 .section.first {
@@ -246,8 +246,13 @@ p {
 }
 
 .restaurant {
-  border-bottom: none;
-  margin-bottom: 1rem;
+  border-bottom: 2px dotted #cccccc;
+	padding: 0 0 1rem 0;
+	margin: 1.25rem 0 0 0;
+}
+
+.restaurant .button-1 {
+  margin-bottom: 0.5rem;
 }
 
 .restaurant h2, h2.section-header, .headshot h2 {
