@@ -4,6 +4,9 @@ document.getElementById("headerBlock").innerHTML = headerCode;
 // filling in the page name for the H1
 document.getElementById("topOfPageText").innerHTML = aichOne;
 
+// building the footer
+document.getElementById("footer").innerHTML = footerCode;
+
 // declaring site nav variables for interaction
 const menu = document.getElementById("siteMenu"), 
   hamburger = document.getElementById("hamburger"),
@@ -77,4 +80,14 @@ function selectRest() {
   }
 }
 
-// pageHeader.innerHTML = pageName;
+const restaurant = document.getElementsByClassName("restaurant"),
+  restLink = document.getElementsByClassName("restaurant-link"),
+  restImage = document.getElementsByClassName("image-placeholder");
+
+// Script that
+// lets restaurant image divs be clickable
+for (let i = 0; i < restaurant.length; i++) {
+  restImage[i].addEventListener("click", () => {
+    restLink[i].click();
+  });
+}

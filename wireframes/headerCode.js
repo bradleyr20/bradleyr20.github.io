@@ -70,3 +70,17 @@ var headerCode =
       </li>
     </ul>
   </nav>`;
+
+  var footerCode = 
+  `<ul>
+    <li class="footer-element first">&copy;2023 Union Square Hospitality Group.</li>
+    <li class="footer-element">All rights reserved. Made in NYC.</li>    
+    <li class="footer-element"><a href="https://www.ushg.com/contact-us/">Contact</a></li>
+    <li class="footer-element"><a href="https://www.ushg.com/privacy/">Privacy Policy</a></li>
+    <li class="footer-element"><a href="https://www.ushg.com/terms-and-conditions/">Terms & Conditions</a></li>
+    <li class="footer-element"><a href="https://www.ushg.com/accessibility/">Accessibility</a></li>
+    <li class="footer-element"><a href="https://www.ushg.com/button%20class=">Newsletter</a></li>
+    <li class="footer-element"><a href="about-us.html#team-section">Executive Team</a></li>
+    <li class="footer-element"><a href="https://ehi.fund/">Investments</a></li>
+    <li class="footer-element"><a href="restaurants-v2.html">Restaurants</a></li>
+  </ul>`;

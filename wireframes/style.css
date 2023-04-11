@@ -11,6 +11,10 @@ body {
   width:100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 @media only screen
   and (max-device-width: 428px) 
   and (-webkit-min-device-pixel-ratio: 3) {
@@ -262,11 +266,65 @@ p {
 .image-placeholder {
   width: 100%;
   height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.restaurant .image-placeholder {
-  background-color: #00bfff;
+.image-placeholder.bluesmoke {
+  background-image: url("images/restaurants/blue-smoke1.webp");
 }
+
+.image-placeholder.cedrics {
+  background-image: url("images/restaurants/cedrics1.webp");
+}
+
+.image-placeholder.ci-siamo {
+  background-image: url("images/restaurants/ci-siamo1.webp");
+}
+
+.image-placeholder.dailyprov {
+  background-image: url("images/restaurants/dailyprov.webp");
+}
+
+.image-placeholder.gramercy-tavern {
+  background-image: url("images/restaurants/gramercytav1.webp");
+}
+
+.image-placeholder.maialino {
+  background-image: url("images/restaurants/maialino1.webp");
+}
+
+.image-placeholder.manhatta {
+  background-image: url("images/restaurants/manhatta1.webp");
+}
+
+.image-placeholder.manhatta {
+  background-image: url("images/restaurants/manhatta1.webp");
+}
+
+.image-placeholder.marta {
+  background-image: url("images/restaurants/marta1.webp");
+}
+
+.image-placeholder.the-modern {
+  background-image: url("images/restaurants/themodern1.webp");
+}
+
+.image-placeholder.porchlight {
+  background-image: url("images/restaurants/porchlight1.webp");
+}
+
+.image-placeholder.tacocina {
+  background-image: url("images/restaurants/tacocina1.webp");
+}
+
+.image-placeholder.union-square-cafe {
+  background-image: url("images/restaurants/unionsqcafe1.webp");
+}
+
+/* .restaurant .image-placeholder {
+  background-color: #00bfff;
+} */
 
 .headshot .image-placeholder {
   background-color: #c2c2c2;
@@ -396,14 +454,44 @@ img.catIcon {
 }
 
 #footer {
-  height: 480px;
+  min-height: 320px;
   background-color: #505050;
   margin: 0;
-  width: 100%;
+  width: auto;
   position: static;
+  padding: 2rem;
 }
 
-.section.last, .section.noLine {
+#footer > ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 0 3rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  padding: 0;
+}
+
+#footer li.footer-element {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #ccc;
+  width: auto;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+#footer li.footer-element.first {
+  margin-bottom: 0.25rem;
+}
+
+.section.last, .section.noLine, .restaurant.last {
   border-bottom: none;
 }
 
