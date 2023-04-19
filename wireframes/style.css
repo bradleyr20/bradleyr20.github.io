@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.675rem;
+  font-size: 1.625rem;
 	font-weight: 200;
   line-height: 1.8rem;
 }
@@ -249,6 +249,13 @@ p {
   margin-top: 1.5rem;
 }
 
+.image-placeholder {
+  width: 100%;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .restaurant {
   border-bottom: 2px dotted #cccccc;
 	padding: 0 0 1rem 0;
@@ -263,62 +270,163 @@ p {
 	margin: 1rem 0;
 }
 
-.image-placeholder {
+#restaurant-map {
   width: 100%;
-  height: 360px;
-  background-repeat: no-repeat;
-  background-position: center;
+  min-height: 420px;
+  height: fit-content;
 }
 
-.image-placeholder.bluesmoke {
+#restaurant-map > img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#private-dining-intro {
+  padding: 0 1.2rem;
+}
+
+#private-dining-intro p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #5c5c5c;
+  margin: 0 0 0.8rem 0;
+}
+
+#restaurant-key {
+  font-size: 0.75rem;
+  color: #4d4d4d;
+  padding: 0 1rem;
+  display: block;
+}
+
+#restaurant-key h3 {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 1rem 0 0.5rem 0;
+}
+
+#map-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 5rem;
+  margin: 0;
+  padding-left: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.25rem 1rem;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+#map-list > li {
+  padding: 0;
+}
+
+#restaurant-key .button-1 {
+  margin-top: 0.5rem;
+}
+
+.known-for {
+  color:#777;
+  font-weight: bold;
+  font-style: normal;
+  /* text-transform: uppercase; */
+}
+
+#restaurant-tiles {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1.5rem 0;
+  padding-left: 0;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.75rem;
+  list-style-type: none;
+}
+
+#restaurant-tiles > li {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  width: 40%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+#restaurant-tiles > li > a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+  text-shadow: 0 2px 3px #333;
+}
+
+#restaurant-tiles > li.generic > a {
+  text-shadow: none;
+}
+
+#restaurant-tiles > li.generic {
+  background-color:#396b8c;
+}
+
+#restaurant-tiles > li.apres {
+  background-image: url("images/restaurants/apres-1.webp");
+}
+
+.image-placeholder.bluesmoke, #restaurant-tiles > li.bluesmoke {
   background-image: url("images/restaurants/blue-smoke1.webp");
 }
 
-.image-placeholder.cedrics {
+.image-placeholder.cedrics, #restaurant-tiles > li.cedrics {
   background-image: url("images/restaurants/cedrics1.webp");
 }
 
-.image-placeholder.ci-siamo {
+.image-placeholder.ci-siamo, #restaurant-tiles > li.ci-siamo {
   background-image: url("images/restaurants/ci-siamo1.webp");
 }
 
-.image-placeholder.dailyprov {
+.image-placeholder.dailyprov, #restaurant-tiles > li.dailyprov {
   background-image: url("images/restaurants/dailyprov.webp");
 }
 
-.image-placeholder.gramercy-tavern {
+.image-placeholder.gramercy-tavern, #restaurant-tiles > li.gramercy-tavern {
   background-image: url("images/restaurants/gramercytav1.webp");
 }
 
-.image-placeholder.maialino {
+.image-placeholder.maialino, #restaurant-tiles > li.maialino {
   background-image: url("images/restaurants/maialino1.webp");
 }
 
-.image-placeholder.manhatta {
+.image-placeholder.manhatta, #restaurant-tiles > li.manhatta {
   background-image: url("images/restaurants/manhatta1.webp");
 }
 
-.image-placeholder.manhatta {
-  background-image: url("images/restaurants/manhatta1.webp");
-}
-
-.image-placeholder.marta {
+.image-placeholder.marta, #restaurant-tiles > li.marta {
   background-image: url("images/restaurants/marta1.webp");
 }
 
-.image-placeholder.the-modern {
+.image-placeholder.the-modern, #restaurant-tiles > li.the-modern {
   background-image: url("images/restaurants/themodern1.webp");
 }
 
-.image-placeholder.porchlight {
+.image-placeholder.porchlight, #restaurant-tiles > li.porchlight {
   background-image: url("images/restaurants/porchlight1.webp");
 }
 
-.image-placeholder.tacocina {
+.image-placeholder.tacocina, #restaurant-tiles > li.tacocina {
   background-image: url("images/restaurants/tacocina1.webp");
 }
 
-.image-placeholder.union-square-cafe {
+.image-placeholder.union-square-cafe, #restaurant-tiles > li.union-square-cafe {
   background-image: url("images/restaurants/unionsqcafe1.webp");
 }
 
@@ -614,6 +722,7 @@ img.catIcon {
 
 #RestaurantList .restRoomDesc {
   padding-bottom: 0.5rem;
+  padding-top: 0.075rem;
 }
 
 #restaurantSorts {
@@ -645,6 +754,7 @@ img.catIcon {
 .restRoomDesc {
   color: #aaa; 
   font-size: 0.8rem; 
+  line-height: 1rem;
   font-style: italic;
 }
 
